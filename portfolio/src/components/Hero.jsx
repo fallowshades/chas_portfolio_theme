@@ -1,4 +1,5 @@
 import { skills } from '@/data/data'
+import SkillsCard from './SkillsCard'
 const Hero = () => {
   return (
     <section>

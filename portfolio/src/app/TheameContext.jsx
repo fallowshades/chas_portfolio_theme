@@ -1,6 +1,6 @@
 'use client'
 import React, { createContext, useContext, useReducer } from 'react'
-
+import { Navbar } from '@/components'
 const ThemeContext = createContext()
 
 const initialState = {
@@ -20,7 +20,10 @@ const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{}}>
-      <div>{children}</div>
+      <main className="grid lg:grid-cols-5">
+        <Navbar />
+        {children}
+      </main>
     </ThemeContext.Provider>
   )
 }

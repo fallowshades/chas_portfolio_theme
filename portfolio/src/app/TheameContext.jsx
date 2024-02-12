@@ -86,7 +86,7 @@ const ThemeProvider = ({ children }) => {
         break
     }
   }
-  console.log(state.theme)
+
   return (
     <ThemeContext.Provider value={{ setTheme }}>
       <main className={`bg-${state.theme}`}>

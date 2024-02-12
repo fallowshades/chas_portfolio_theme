@@ -15,14 +15,18 @@ function themeReducer(state, action) {
   // your code here
 }
 
+const setTheme = (theme) => {
+  console.log('change')
+}
+
 const ThemeProvider = ({ children }) => {
   // your code here
 
   return (
-    <ThemeContext.Provider value={{}}>
-      <main className="grid lg:grid-cols-5">
+    <ThemeContext.Provider value={{ setTheme }}>
+      <main className="">
         <Navbar />
-        {children}
+        <div className="py-16 px-4 sm:px-8 lg:px-16">{children}</div>
       </main>
     </ThemeContext.Provider>
   )

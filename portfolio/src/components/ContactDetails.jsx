@@ -1,4 +1,4 @@
 const ContactDetails = () => {
-  return <div>ContactDetails</div>
+  return <div>call me baby! 07- 69696969</div>
 }
 export default ContactDetails
